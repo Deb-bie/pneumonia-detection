@@ -1,9 +1,9 @@
-# script to unzip data
-
 #!/bin/bash
 
 # Set the directory containing the zip files
 zip_dir="../data/raw"
+
+mkdir -p "$zip_dir"
 
 # Check if the directory is provided
 if [ -z "$zip_dir" ]; then
